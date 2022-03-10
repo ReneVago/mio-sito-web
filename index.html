@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> <!--file di stile de sito su cui lavoro-->
+
+  <!--  FONT  -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- MENU / NAVABAR -->
+  <div class="navbar-fixed">
+    <nav>
+      <!-- cambio colore della barra -->
+      <div class="nav-wrapper teal lighten-2"> 
+
+        <a href="#" class="brand-logo">Renè Vago</a>
+        <!--# serve per ritornare ad inizio sito-->
+        
+        
+        <!--questa stringa serve per l adattamento al formato mobile-->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <!-- lista per il menù fisso-->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+        <!-- lista per il menù mobile-->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+        
+<!-- INTRO  -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section-intro no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">titolo da cambiare</h1> <!-- titolo + colore del testo-->
+        <div class="row center">
+          <h5 class="header-subtitle col s12 light">sottotitolo da pensare anche questo</h5><!-- sottotitolo + colore-->
+        </div>
+        <div class="row center">
+          <a href="#servizi" class="btn-large waves-effect waves-light teal lighten-1">Scopri!</a> <!-- bottone + colore + effetto onda al tocco del bottone, link da aggiungere--> <!-- collegameto alla sezione sotto con #serivizio (# vuol dire rimanere sulla pagina web + serzione interessata)-->
+        </div> <!-- collegamento con la sezione "servizio" e il "#"serve per indicare di rimanere nella stessa-->
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="retrogame.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+<!-- SERVIZIO -->
+  <div id="servizi" class="container"> <!-- aggiunta di un id (identità) per poter collegare questa sezione al bottone presente in intro-->
+
+    <div class="section">
+      <div class="col-servizi">
+
+        <!-- Icon Section -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-2"><span class="material-icons">terminal</span></h2><!--stringa dedita alle icone proveniente di google icons-->
+              <h5 class="center">Creazione e modellazione attraverso javascript</h5>
+              <br> <!-- crea uno spazio di interlinea fra il testo-->
+              <p class="center light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-2"><span class="material-icons">sports_esports</span></h2>
+              <h5 class="center">Play e divertiti</h5>
+              <br>
+              <p class=" center light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-2"><span class="material-icons">devices</span></h2>
+              <h5 class="center">Supporto per ogni device</h5>
+              <br>
+              <p class="center light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- PROGETTI -->
+  <div id="progetti" class="parallax-container valign-wrapper">
+    <div class="section-progetti no-pad-bot">
+     <div class="container">
+        <div class="col-progetti">
+
+              <div class="row center">
+                <h4 class="col s12 light">Progetti realizzati</h4>
+              </div>
+            </div>
+          </div>
+          
+
+            <div class="row"> <!-- griglia di base da 12 che deve contenere tutte e 3 le immagini-->
+              <!-- 1 card -->
+              <div class="col s12 m4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="retrogame.jpg">
+                    <span class="card-title">flappy bird</span>
+                    <a class="play-arrow btn-floating btn-play center halfway-fab waves-effect waves-light red"><span class="simbolo-play material-icons">play_arrow</span></a>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 card -->
+              <div class="col s12 m4">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="retrogame.jpg">
+                      <span class="card-title">gioco pallina</span>
+                      <a class="play-arrow btn-floating btn-play center halfway-fab waves-effect waves-light red"><span class="simbolo-play material-icons">play_arrow</span></a>
+                    </div>
+                    <div class=" card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
+              </div>
+                   
+              <!-- 3 card -->
+              <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="retrogame.jpg">
+                      <span class="card-title">carta forbice sasso</span>
+                      <a class="play-arrow btn-floating btn-play center halfway-fab waves-effect waves-light red"><span class="simbolo-play material-icons">play_arrow</span></a>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      
+    <div class="parallax"><img src="joystick e mano.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+<!--CONTATTI -->
+  <div id="contatti" class="container">
+    <div class="section">
+        <div class="col-contatti">
+
+        <div class="row">
+          <div class="col s12 center">
+            <div class="icon-block">
+              <h2 class="center teal-text text-lighten-2"><span class="material-icons">email</span></h2>
+            </div>
+              <h4>Contatti</h4>
+              <br>
+              
+              <!--struttura per i contatti-->
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <!--NOME-->
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate"> <!-- class= validate riguarda l illuminzione della barra in verde o rosso-->
+                      <label for="first_name">Nome</label>
+                    </div>
+                    <!--COGNOME-->
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Cognome</label>
+                    </div>
+                  </div>
+                  <!--MESSAGGIO-->
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea validate"></textarea>
+                          <label for="textarea1">Messaggio</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--EMAIL-->
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <!--BOTTONE-->
+                  <a href="mailto:vagorene93@gmail.com" class="btn-large waves-effect waves-light teal lighten-1"></i>Invia!</a>
+                </div>
+                </form>
+              </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- immagine scroll-->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="retrogame.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+   <!-- FOOTER -->
+  <footer class="page-footer teal lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 center">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+      2022 &copy <a class="white-text text-lighten-2"> Vago Renè</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://kit.fontawesome.com/ddcfa3d89e.js" crossorigin="C:\Users\Renè\Documents\dbga\sorta di sit0\lacerbnb\fontawesome-free-6.0.0-web"></script>
+  </body>
+</html>
