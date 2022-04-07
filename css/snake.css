@@ -1,0 +1,108 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ body /*è una classe come tutte quelle prima delle graffe*/
+ {
+   font-family: 'Raleway', sans-serif;/*font del body*/
+ }
+ 
+ nav ul a,   /*indicano la barra superiore e sono due selector che si possono mettere in comune con una virgola, con le stesse caratterstiche*/
+ nav .brand-logo {
+   color: white; /*indica il colore della barra del menù e il logo*/
+ }
+ 
+ .nav-wrapper {
+   position: relative;
+   height: 100%;
+   padding-left: 50px; /*sono i margini del logo */
+   padding-right: 50px;
+   /*si possono scrivere anche in padding:  0 10px che indica 0 sopra e sotto e il 10px sono destra e sinistra*/
+ }
+ 
+ p  /*stile dei paragrafi*/
+   { 
+   line-height: 2rem;
+   color:rgb(24, 23, 23);
+ }
+ 
+ .sidenav-trigger /*stile della barra di navigazione*/
+ {
+   color: white;
+ }
+ 
+ .parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+ .header /*margine del titolo*/
+ {
+   margin-top: 65px;
+ }
+ 
+ @media only screen and (max-width : 992px) {
+   .parallax-container .section {
+     position: absolute;
+     top: 40%;
+     margin-top: 70px;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ /*se il sito è in uno schermo con un massimo di 600px avranno queste impostazioni*/
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 0;
+   }
+ 
+   .nav-wrapper
+   {
+     position: relative;
+     height: 100%;
+     padding: 0 10px;
+   }
+ 
+ }
+ 
+ .defaultCanvas0
+ {
+  width: 200px;
+ }
+
+.posizioneSlider
+{
+  padding-bottom: 35px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+#game-board
+{
+  background-color: rgb(177, 176, 176);
+  width: 900px;
+  height: 500px;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr); /*creazione della griglia di 21 caselle indipendentemente dalle dimensioni dello schermo*/
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.snake
+{
+  background-color: blue;
+  border: .25vmin solid black;
+}
+
+.food
+{
+  background-color: yellow;
+  border: .25vmin solid black;
+}

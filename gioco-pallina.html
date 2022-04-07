@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Colpisci la palla - Renè vago</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/gioco-pallina.css" type="text/css" rel="stylesheet" media="screen,projection"/> <!--file di stile de sito su cui lavoro-->
+
+  <!--  FONT  -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!-- MENU / NAVABAR -->
+    <div class="navbar-fixed">
+      <nav>
+        <!-- cambio colore della barra -->
+        <div class="nav-wrapper teal lighten-2"> 
+  
+          <a href="index.html" class="brand-logo">Renè Vago</a>
+          <!--# serve per ritornare ad inizio sito-->
+          
+          
+          <!--questa stringa serve per l adattamento al formato mobile-->
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <!-- lista per il menù fisso-->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://127.0.0.1:5500/index.html#servizi">Servizi</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#progetti">Progetti</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contatti">Contatti</a></li>
+          </ul>
+          <!-- lista per il menù mobile-->
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="http://127.0.0.1:5500/index.html#servizi">Servizi</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#progetti">Progetti</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contatti">Contatti</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- INTRO  -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section-intro no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Colpisci la palla</h1> <!-- titolo + colore del testo-->
+        <br>
+      </div>
+    </div>
+    <div class="parallax"><img src="retrogame.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+    <!--DESCRIZIONE DEL GIOCO-->
+    <div id="titolo">
+      <div class="container">
+        <div class="row center">
+          <p>Obbiettivo del gioco? Molto semplice!<br>
+              Clicca sulle palline a schermo e falle esplodere, ma attenti a non farle aumentare fino ad un massimo di 5. Altrimenti? Beh perderai.. <br>
+              Nb: sbrigati che il game parte subito!!!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANVAS DEL GIOCO-->
+    <div class="container"> <!--il contenuto-->
+      <div class="row center">
+        <div class="col s12">
+          <div class="canvas" id="canvas"> <!-- creazione del canvas-->
+              <script>
+                  var canvas= document.getElementById("canvas");
+              </script>
+          </div>
+        </div>
+      </div>
+
+      <!--CURSORE VELOCITA-->
+      <div class="container">
+        <div class="row center">
+          <div class="col s12">
+            <div id="posizioneSlider" class="posizioneSlider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- immagine scroll-->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="retrogame.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+    <footer class="page-footer teal lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l12 s12 center"></div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        2022 &copy <a class="white-text text-lighten-2"> Vago Renè</a>
+        </div>
+      </div>
+    </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://kit.fontawesome.com/ddcfa3d89e.js" crossorigin="C:\Users\Renè\Documents\dbga\sorta di sit0\lacerbnb\fontawesome-free-6.0.0-web"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> <!-- con questo script apre da google la pagina di p5.js -->
+  <script src="js/struttura-pallina.js"></script> <!--script che ape il file in javascript-->
+  <script src="js/caratteristiche-pallina.js"></script> <!--script che richiama l'oggetto palla in file jasvascript-->
+
+</body>
+</html>
